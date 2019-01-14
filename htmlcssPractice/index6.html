@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Position</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 400%;
+        background-color: red;
+      }
+      /* .box {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+       디폴트로 모든 박스는 포지션이 static 이다. 이 뜻은 그 element를 거기
+        높으면 거기 있을 것이다~라는 뜻
+      }
+      */
+
+      .abs-box {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        position: relative;
+      }
+      .abs-child {
+        width: 100px;
+        height: 100px;
+        background-color: green;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+
+      /* position Fixed
+      #one-B {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+        position: static;
+      }
+      #two-B {
+        height: 300px;
+        width: 300px;
+        background-color: green;
+        position: fixed;
+        bottom: 10px;
+        left: 500px;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="abs-box"><div class="abs-child"></div></div>
+
+    <!--
+      Position fixed
+      <div class="box" id="one-B"><div class="box-child"></div></div>
+      <div class="box" id="two-B"><div class="box-child"></div></div>
+    -->
+  </body>
+</html>

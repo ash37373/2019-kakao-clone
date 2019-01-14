@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flex</title>
+    <style>
+      html,
+      body {
+        height: 100%;
+      }
+      .father {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        height: 100%;
+        flex-direction: row;
+        /* row, row-reverse, column, column-reverse */
+        /* row가 디폴트. 반대는 column  */
+        /* flex-wrap: wrap; 디폴트는 no-wrap임*/
+        flex-wrap: wrap-reverse;
+      }
+
+      .box {
+        background-color: red;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+      플렉스를 사용할때는 칠드런 박스에 적용하지 않는다. 오직 부모 클래스에만 적용
+    -->
+    <div class="father">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+      <div class="box">9</div>
+      <div class="box">10</div>
+    </div>
+  </body>
+</html>
